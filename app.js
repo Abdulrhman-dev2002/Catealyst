@@ -3,6 +3,9 @@ const tabBtn = document.querySelectorAll(".tab-btn");
 const save = document.getElementById("save");
 const prices = document.querySelectorAll(".price")
 const highlights = document.querySelectorAll(".highlight")
+const faqHead = document.querySelectorAll(".faq-head");
+const expandAllBtn = document.getElementById("expandAll");
+const collapseAllBtn = document.getElementById("collapseAll");
 
  menuSm.classList.add("hidden");
 
@@ -77,5 +80,62 @@ tabBtn.forEach((tab) => {
    }
 
   })
+ });
+});
+
+faqHead.forEach((head) =>{
+ head.addEventListener("click", () =>{
+  const body = head.parentElement.querySelector(".faq-body");
+
+  if (body.classList.contains("max-h-0")){
+   body.classList.remove("max-h-0");
+   body.classList.add("max-h-40");
+  }else {
+   body.classList.add("max-h-0");
+   body.classList.remove("max-h-40");
+  }
+ });
+});
+
+faqHead.forEach((head) => {
+ head.addEventListener("click", () => {
+  const plus = head.querySelector(".plus-icon");
+  const close = head.querySelector(".close-icon");
+
+  plus.classList.toggle("hidden");
+  close.classList.toggle("hidden");
+
+
+ })
+});
+
+
+expandAllBtn.addEventListener("click", () => {
+ document.querySelectorAll(".faq-body").forEach((body) => {
+  body.classList.remove("max-h-0");
+  body.classList.add("max-h-40")
+ });
+
+ document.querySelectorAll(".plus-icon").forEach((icon) => {
+  icon.classList.add("hidden");
+ });
+
+ document.querySelectorAll(".close-icon").forEach((icon) => {
+  icon.classList.remove("hidden");
+ });
+});
+
+collapseAllBtn.addEventListener("click", () => {
+ document.querySelectorAll(".faq-body").forEach((body) => {
+  body.classList.add("max-h-0");
+  body.classList.remove("max-h-40")
+ });
+
+ document.querySelectorAll(".plus-icon").forEach((icon) => {
+  icon.classList.remove("hidden");
+ });
+
+ document.querySelectorAll(".close-icon").forEach((icon) => {
+  icon.classList.add("hidden");
  });
 });
