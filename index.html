@@ -7,7 +7,7 @@
   <!-- Talwind CDN-->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- CSS File-->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/Catealyst_Project/style.css" />
   <title>Catealyst | page</title>
 
   <style type="text/tailwindcss">
@@ -38,7 +38,7 @@
           </svg>
         </di>
 
-        <span class="text-2xl font-bold">Catalyst</span>
+        <span class="text-2xl font-bold w-full">Catalyst</span>
       </div>
 
       <!-- Linkes-->
@@ -72,7 +72,7 @@
           Start Free
         </button>
       </div>
-      <button class="flex md:hidden! hamburger hamburger--collapse" type="button " id="toggle">
+      <button class="flex justify-end md:hidden! hamburger hamburger--collapse" type="button " id="toggle">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
@@ -138,7 +138,7 @@
 
       <!-- Dasshbourd-->
       <div
-        class="relative gap-1 rounded-2xl bg-secondary/10 border border-secondary/10 inset-shadow-sm inset-shadow-white p-5 my-10">
+        class="relative gap-1 rounded-2xl w-85 md:w-full bg-secondary/10 border border-secondary/10 inset-shadow-sm inset-shadow-white p-3 my-10">
         <!--header-->
         <div class="flex items-center justify-between py-5 border-b border-secondary/15">
           <!-- controls-->
@@ -148,8 +148,8 @@
             <span class="block w-4 h-4 bg-secondary/10 rounded-full"></span>
           </div>
           <!-- tabs-->
-          <ul class="flex items-center mx-auto gap-5" 3>
-            <button class="cursor-auto capitalize text-black font-bold bg-white py-2 px-3 rounded-md shadow-sm">
+          <ul class="flex items-center    md:mx-auto gap-1 grid grid-cols-2 md:grid-cols-1 gap-5">
+            <button class="cursor-auto  capitalize text-black font-bold bg-white py-2 px-3 rounded-md shadow-sm">
               Overview
             </button>
             <li class="capitalize text-secondary/50 cursor-auto">Funnels</li>
@@ -307,8 +307,9 @@
 
 
       <!-- statics section-->
-      <div class="p-10 flex flex-col">
-        <span class="flex items-center justify-center text-[#999999] uppercase traking-wider mx-auto w-fit">Performance
+      <div class="p-10 flex flex-col gap-5">
+        <span
+          class=" flex items-center justify-center text-[#999999] font-semibold text-center uppercase traking-wider mx-auto w-fit">Performance
           that speaks for itself</span>
         <!-- stats-->
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-25 mb-10 md:my-30">
@@ -348,7 +349,7 @@
 
         <!-- cards section-->
         <section class="mb-10 md:mb-20">
-          <div class="flex flex-col gap-5 mb-7">
+          <div class="flex flex-col mx-auto gap-5 mb-7">
             <p class="flex items-center justify-center gap-2">
               <span class="block w-2 h-2 bg-green rounded-full animate-pulse">
               </span>
@@ -356,7 +357,7 @@
               <span class="uppercase text-[#999999] tracking-wider">The Engine</span>
             </p>
 
-            <h2 class="text-5xl font-extrabold mx-auto text-center w-full md:w-170">
+            <h2 class="text-5xl font-extrabold mx-auto text-center   md:w-170">
               Everything your data team actually needs
             </h2>
           </div>
@@ -364,7 +365,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <!-- card 1-->
             <div
-              class="flex flex-col gap-5 bg-secondary/15 p-5 rounded-2xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+              class="flex flex-col gap-5 bg-secondary/15 p-5 rounded-2xl border border-secondary/15 inset-shadow-sm inset-shadow-white w-fit">
               <span class="bg-white p-3 w-fit rounded-xl border border-secondary/15">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                   stroke="#111" class="w-7 h-7">
@@ -399,7 +400,7 @@
             <!-- card 2-->
 
             <div
-              class="flex flex-col gap-5 bg-secondary/15 p-8 rounded-xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+              class="flex flex-col gap-5 bg-secondary/15 p-8 rounded-xl border border-secondary/15 inset-shadow-sm inset-shadow-white w-fit">
               <span class="bg-white p-2 w-fit rounded-xl">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                   stroke="#111" class="w-7 h-7">
@@ -432,7 +433,7 @@
 
             <!-- card 3-->
             <div
-              class="flex flex-col gap-5 bg-secondary/15 p-8 rounded-xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+              class="flex flex-col gap-5 bg-secondary/15 p-5 rounded-2xl border border-secondary/15 inset-shadow-sm inset-shadow-white w-fit">
               <span class="bg-white p-2 w-fit rounded-xl">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                   stroke="#111" class="w-7 h-7">
@@ -448,9 +449,9 @@
                 control, and collaborative editing come standard.
               </p>
 
-              <div class="bg-white rounded-xl p-4">
-                <div class="flex items-center gap-[6px] h-24">
-                  <div class="mini-code">
+              <div class="bg-white rounded-xl p-4 w-fit">
+                <div class="flex items-center   md:h-24">
+                  <div class="mini-code ">
                     <span class="keyword">SELECT</span> user_id,
                     <span class="keyword">COUNT</span>(*)<br />
                     <span class="keyword">FROM</span> events<br />
@@ -1189,8 +1190,7 @@
     </section>
 
   </footer>
-  <script src="app.js"></script>
 </body>
-
+<script src="/Catealyst_Project/app.js"></script>
 
 </html>
