@@ -1,0 +1,1101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Talwind CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- CSS File-->
+  <link rel="stylesheet" href="/Catealyst_Project/style.css" />
+  <title>Catealyst | page</title>
+
+  <style type="text/tailwindcss">
+    @theme {
+        --color-primary: #D4FF00;
+        --color-secondary: #666666;
+        --color-third:#f0f0f0;
+        --color-green: #22c55e;
+    
+      }
+
+   
+    </style>
+
+  <!-- hamburgers menu -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hamburgers/dist/hamburgers.min.css" />
+</head>
+
+<body>
+  <!-- Header-->
+  <header class="fixed top-0 inset-x-0 w-full backdrop-blur-lg lg:border-b lg:border-secondary/15 z-1000">
+    <nav class="flex items-center justify-between p-5 w-full border-b border-secondary/15 lg:border-0">
+      <!-- logo-->
+      <div class="flex items-center justify-between hover:cursor-pointer gap-3">
+        <di v class="flex items-center justify-center rounded-xl bg-primary w-8 h-8">
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5">
+            <path d="M3 8L7 4L13 8L7 12L3 8Z" fill="#111"></path>
+          </svg>
+        </di>
+
+        <span class="text-2xl font-bold">Catalyst</span>
+      </div>
+
+      <!-- Linkes-->
+      <ul class="hidden md:flex items-center gap-5">
+        <li>
+          <a href="#Performance"
+            class="capitalize text-secondary hover:text-black font-semibold cursor-pointer transition-colors">Performance</a>
+        </li>
+        <li>
+          <a href="#Features"
+            class="capitalize text-secondary hover:text-black font-semibold cursor-pointer transition-colors">Features</a>
+        </li>
+        <li>
+          <a href="#Pricing"
+            class="capitalize text-secondary hover:text-black font-semibold cursor-pointer transition-colors">Pricing</a>
+        </li>
+        <li>
+          <a href="#FAQ"
+            class="capitalize text-secondary hover:text-black font-semibold cursor-pointer transition-colors">FAQ</a>
+        </li>
+      </ul>
+
+      <!-- btns-->
+      <div class="hidden md:flex items-center gap-5">
+        <button
+          class="capitalize font-semibold py-3 px-4 rounded-lg border border-secondary/20 hover:border-black hover:-translate-1 cursor-pointer transition-all buttonShadow">
+          Log In
+        </button>
+        <button
+          class="capitalize font-semibold py-3 px-4 rounded-lg border border-secondary/20 bg-primary hover:border-black transition-all hover:-translate-1 cursor-pointer buttonShadow">
+          Start Free
+        </button>
+      </div>
+      <button class="flex md:hidden! hamburger hamburger--collapse" type="button " id="toggle">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </nav>
+    <!--(menu sm) Linkes-->
+    <ul class="md:hidden flex flex-col items-center gap-4 my-20" id="menuSm">
+      <li>
+        <a href="#Performance" class="capitalize transition-colors font-semibold text-3xl">Performance</a>
+      </li>
+      <li>
+        <a href="#Features" class="capitalize transition-colors font-semibold text-3xl">Features</a>
+      </li>
+      <li>
+        <a href="#Pricing" class="capitalize transition-colors font-semibold text-3xl">Pricing</a>
+      </li>
+      <li>
+        <a href="#FAQ" class="capitalize transition-colors font-semibold text-3xl">FAQ</a>
+      </li>
+    </ul>
+  </header>
+
+  <!--content-->
+  <main class="container mx-auto mt-50 px-5">
+    <!-- hero section-->
+    <section>
+      <!-- badage-->
+      <div
+        class="w-fit mx-auto flex items-center justify-center py-2 px-4 w-75 rounded-full bg-secondary/15 border border-secondary/15 inset-shadow-sm inset-shadow-white gap-2">
+        <span class="block w-2 h-2 bg-green rounded-full animate-pulse"></span>
+        <span class="text-secondary rounded-lg p-1">v4.2 — Now with real-time sync</span>
+      </div>
+
+      <!-- main info-->
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="text-7xl font-extrabold w-full md:w-200 my-8 text-center leading-22.5 tracking-tight">
+          The analytics platform built for
+          <span class="bg-primary py-1 px-4 rounded-xl">speed</span>
+        </h1>
+        <p class="flex items-center justify-center text-center text-secondary w-full md:w-115">
+          Stop waiting for insights. Catalyst delivers sub-second queries
+          across billions of rows so your team ships decisions, not
+          dashboards.
+        </p>
+        <!-- btns-->
+        <div class="flex items-center   justify-center gap-5 grid sm:grid-cols-1  my-8 flex-row-reverse">
+          <button
+            class="capitalize    font-semibold py-3 px-4 rounded-lg border border-secondary/20 hover:border-black hover:-translate-1 cursor-pointer transition-all buttonShadow">
+            watch demo
+          </button>
+          <button
+            class="capitalize font-semibold py-3 px-4 rounded-lg border border-secondary/20 bg-primary hover:border-black transition-all hover:-translate-1 cursor-pointer buttonShadow flex items-center gap-2">
+            <span>start free trial</span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                stroke="currentColor" class="size-6 w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dasshbourd-->
+      <div
+        class="relative gap-1 rounded-2xl bg-secondary/10 border border-secondary/10 inset-shadow-sm inset-shadow-white p-5 my-10">
+        <!--header-->
+        <div class="flex items-center justify-between py-5 border-b border-secondary/15">
+          <!-- controls-->
+          <div class="flex items-center gap-2 py-3">
+            <span class="block w-4 h-4 bg-secondary/10 rounded-full"></span>
+            <span class="block w-4 h-4 bg-secondary/10 rounded-full"></span>
+            <span class="block w-4 h-4 bg-secondary/10 rounded-full"></span>
+          </div>
+          <!-- tabs-->
+          <ul class="flex items-center mx-auto gap-5" 3>
+            <button class="cursor-auto capitalize text-black font-bold bg-white py-2 px-3 rounded-md shadow-sm">
+              Overview
+            </button>
+            <li class="capitalize text-secondary/50 cursor-auto">Funnels</li>
+            <li class="capitalize text-secondary/50 cursor-auto">
+              Retention
+            </li>
+            <li class="capitalize text-secondary/50 cursor-auto">Revenue</li>
+          </ul>
+        </div>
+        <!--body-->
+        <div class="py-10 flex items-center justify-center">
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5">
+            <div
+              class="flex flex-col items-center gap-5 border border-secondary/15 rounded-xl bg-white shadow-3xl p-7 w-fit rounded-lg mx-4 leading-8">
+              <span class="uppercase tracking-wider text-secondary">total revenue</span>
+              <span class="text-5xl font-extrabold">$2.4M</span>
+              <div class="flex items-center gap-2">
+                <span class="text-green-500 font-bold">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+                    stroke="currentColor" class="size-6 text-green-500 w-3.5 h-3.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                  </svg>
+                </span>
+                <span class="text-green-500">+18.2%</span>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col items-center gap-5 border border-secondary/15 rounded-xl bg-white shadow-3xl p-7 w-fit rounded-lg mx-4 leading-8">
+              <span class="uppercase tracking-wider text-secondary">Active Users</span>
+              <span class="text-5xl font-extrabold">48,291</span>
+              <div class="flex items-center gap-2">
+                <span class="text-green-500 font-bold">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+                    stroke="currentColor" class="size-6 text-green-500 w-3.5 h-3.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                  </svg>
+                </span>
+                <span class="text-green-500">+7.4%</span>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col items-center gap-5 border border-secondary/15 rounded-xl bg-white shadow-3xl p-7 w-fit rounded-lg mx-4 leading-8">
+              <span class="uppercase tracking-wider text-secondary">Avg. Query Time</span>
+              <span class="text-5xl font-extrabold">42ms</span>
+              <div class="flex items-center gap-2">
+                <span class="text-green-500 font-bold">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+                    stroke="currentColor" class="size-6 w-3.5 h-3.5 text-red-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                  </svg>
+                </span>
+                <span class="text-red-600">-23.5%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table-->
+
+        <section class="rounded-2xl bg-white shadow-3xl p-7 my-5 overflow-x-auto">
+          <!-- head-->
+          <div class="flex items-center justify-between">
+            <span class="capitalize font-semibold">Recent Pipelines</span>
+            <buttom class="py-2 px-4 rounded-lg border border-secondary/15 text-secondary">
+              All teams
+            </buttom>
+          </div>
+
+          <!-- body-->
+          <div class="flex items-center justify-center">
+            <table class="table-auto w-full min-w-[700px] mt-5">
+              <thead class="border-y border-secondary/15 bg-secondary/5">
+                <th class="text-secondary uppercase traking-wider py-5 font-semibold">
+                  Pipeline
+                </th>
+                <th class="text-secondary uppercase traking-wider py-5 font-semibold">
+                  Events /hr
+                </th>
+                <th class="text-secondary uppercase traking-wider py-5 font-semibold">
+                  Latency
+                </th>
+                <th class="text-secondary uppercase traking-wider py-5 font-semibold">
+                  Uptime
+                </th>
+                <th class="text-secondary uppercase traking-wider py-5 font-semibold">
+                  Status
+                </th>
+              </thead>
+
+              <tbody>
+                <tr class="border-b border-secondary/15">
+                  <td class="flex items-center gap-2 py-5">
+                    <span class="px-3 py-2 bg-[#dcfce7] text[#166534] font-semibold rounded-lg">P1</span>
+                    <span class="font-semibold"> Checkout Funnel</span>
+                  </td>
+                  <td class="text-center">1.2m</td>
+                  <td class="text-center">34.ms</td>
+                  <td class="text-center">99.98%</td>
+                  <td class="text-center">
+                    <span class="bg-[#dcfce7] text[#166534] font-semibold rounded-full p-2 px-4">
+                      Active
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr class="border-b border-secondary/15">
+                  <td class="flex items-center gap-2 py-5">
+                    <span class="px-3 py-2 bg-[#dcfce7] text[#166534] font-semibold rounded-lg">P2</span>
+                    <span class="font-semibold"> User Onboarding</span>
+                  </td>
+                  <td class="text-center">52ms</td>
+                  <td class="text-center">847K</td>
+                  <td class="text-center">99.91%</td>
+                  <td class="text-center">Pending</td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr class="border-b border-secondary/15">
+                  <td class="flex items-center gap-2 py-5">
+                    <span class="px-3 py-2 bg-[#dcfce7] text[#166534] font-semibold rounded-lg">P3</span>
+                    <span class="font-semibold"> Revenue Tracker</span>
+                  </td>
+                  <td class="text-center">2.1m</td>
+                  <td class="text-center">28ms</td>
+                  <td class="text-center">99.99%</td>
+                  <td class="text-center">PActive</td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr class="border-b border-secondary/15">
+                  <td class="flex items-center gap-2 py-5">
+                    <span class="px-3 py-2 bg-[#dcfce7] text[#166534] font-semibold rounded-lg">P4</span>
+                    <span class="font-semibold"> A/B Experimentsr</span>
+                  </td>
+                  <td class="text-center">423K</td>
+                  <td class="text-center">61ms</td>
+                  <td class="text-center">99.87%</td>
+                  <td class="text-center">Draft</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- overlay -->
+          <div class="absolute inset-0 w-full h-full bg-linear-to-b from-transpare to-white rounded-2xl shadow-5xl">
+          </div>
+        </section>
+      </div>
+
+
+      <!-- statics section-->
+      <div class="p-10 flex flex-col">
+        <span class="flex items-center justify-center text-[#999999] uppercase traking-wider mx-auto w-fit">Performance
+          that speaks for itself</span>
+        <!-- stats-->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-25 my-30">
+          <div class="flex flex-col items-center gap-4 w-60 mx-auto">
+            <h4 class="flex items-end">
+              <span class="text-8xl font-black rounded-lg bg-primary">42</span>
+              <span class="text-5xl text-secondary font-semibold">ms</span>
+            </h4>
+
+            <p class="text-[#666666] text-center">
+              Average query response time across 10B+ row datasets
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-4 w-60 mx-auto">
+            <h4 class="flex items-end">
+              <span class="text-8xl font-black">99.99</span>
+              <span class="text-4xl text-secondary font-semibold">%</span>
+            </h4>
+
+            <p class="text-[#666666] text-center">
+              Guaranteed uptime SLA for all enterprise customers
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-4 w-60 mx-auto">
+            <h4>
+              <span class="text-8xl font-black">10</span>
+              <span class="text-5xl text-secondary font-semibold">x</span>
+            </h4>
+
+            <p class="text-[#666666] text-center">
+              Faster than legacy warehouses at one-tenth the cost
+            </p>
+          </div>
+        </section>
+
+        <!-- cards section-->
+        <section class="my-50">
+          <div class="flex flex-col gap-5 mb-7">
+            <p class="flex items-center justify-center gap-2">
+              <span class="block w-2 h-2 bg-green rounded-full animate-pulse">
+              </span>
+
+              <span class="uppercase text-[#999999] tracking-wider">The Engine</span>
+            </p>
+
+            <h2 class="text-5xl font-extrabold mx-auto text-center w-full md:w-170">
+              Everything your data team actually needs
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- card 1-->
+            <div
+              class="flex flex-col gap-5 bg-secondary/15 p-5 rounded-2xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+              <span class="bg-white p-3 w-fit rounded-xl border border-secondary/15">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                  stroke="#111" class="w-7 h-7">
+                  <path d="M3 3v18h18"></path>
+                  <path d="M7 16l4-8 4 4 4-6"></path>
+                </svg>
+              </span>
+
+              <h4 class="font-bold">Real-Time Analytics</h4>
+
+              <p class="text-md">
+                Stream, transform, and visualize data the instant it arrives. No
+                batching, no waiting, no stale dashboards.
+              </p>
+
+              <div class="bg-white rounded-xl p-4">
+                <div class="flex items-end gap-[6px] h-24">
+                  <span class="rounded-sm w-5 h-7 bg-secondary/15"> </span>
+                  <span class="rounded-sm w-5 h-11 bg-secondary/15"></span>
+                  <span class="rounded-sm w-5 h-8 bg-secondary/15"></span>
+                  <span class="rounded-sm w-5 h-16 bg-primary"></span>
+                  <span class="rounded-sm w-5 h-12 bg-secondary/15"></span>
+                  <span class="rounded-sm w-5 h-9 bg-secondary/15"></span>
+                  <span class="rounded-sm w-5 h-20 bg-primary"></span>
+                  <span class="rounded-sm w-5 h-14 bg-secondary/15"></span>
+                  <span class="rounded-sm w-5 h-10 bg-secondary/15"></span>
+                  <span class="rounded-sm w-5 h-13 bg-secondary/15"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2-->
+
+            <div
+              class="flex flex-col gap-5 bg-secondary/15 p-8 rounded-xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+              <span class="bg-white p-2 w-fit rounded-xl">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                  stroke="#111" class="w-7 h-7">
+                  <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                  <path d="M8 21h8M12 17v4"></path>
+                </svg>
+              </span>
+
+              <h4 class="font-bold">Pipeline Orchestration</h4>
+
+              <p class="text-md">
+                Build fault-tolerant data pipelines with visual drag-and-drop.
+                Auto-retry, dead-letter queues, and full observability built in.
+              </p>
+
+              <div class="bg-white rounded-xl p-4 flex items-center justify-center w-full md:w-fit">
+                <div class="flex items-center gap-[6px] h-24">
+                  <span class="bg-primary text-black rounded-md font-medium">
+                    Ingest
+                  </span>
+                  <span class="text-gray-500">→</span>
+                  <span class="bg-secondary/15 text-black rounded-md font-medium">
+                    Transfrom
+                  </span>
+                  <span class="text-gray-500">→</span>
+                  <span class="text-secondary">Deliver</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3-->
+            <div
+              class="flex flex-col gap-5 bg-secondary/15 p-8 rounded-xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+              <span class="bg-white p-2 w-fit rounded-xl">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                  stroke="#111" class="w-7 h-7">
+                  <path d="M16 18l6-6-6-6"></path>
+                  <path d="M8 6l-6 6 6 6"></path>
+                </svg>
+              </span>
+
+              <h4 class="font-bold">SQL-First Interface</h4>
+
+              <p class="text-md">
+                Write standard SQL against any source. Auto-completion, version
+                control, and collaborative editing come standard.
+              </p>
+
+              <div class="bg-white rounded-xl p-4">
+                <div class="flex items-center gap-[6px] h-24">
+                  <div class="mini-code">
+                    <span class="keyword">SELECT</span> user_id,
+                    <span class="keyword">COUNT</span>(*)<br />
+                    <span class="keyword">FROM</span> events<br />
+                    <span class="keyword">WHERE</span> ts &gt;
+                    <span class="string">'2026-01'</span><br />
+                    <span class="keyword">GROUP BY</span> 1
+                    <span class="comment">-- 42ms ⚡</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pices-->
+        <section class="mb-50 flex flex-col items-center">
+          <div class="flex flex-col gap-5 m-7">
+            <p class="flex items-center justify-center gap-2">
+              <span class="block w-2 h-2 bg-green rounded-full animate-pulse">
+              </span>
+
+              <span class="uppercase text-[#999999] tracking-wider">Pricing</span>
+            </p>
+
+            <h2 class="text-5xl mb-4 font-extrabold mx-auto text-center w-full md:w-170">
+              Simple, transparent pricing
+            </h2>
+
+
+          </div>
+
+          <!-- tab monthly & yearly -->
+          <div class="inline-flex items-center   gap-5 mb-10">
+            <div
+              class="flex items-center w-fit mx-auto px-4 py-2 rounded-xl bg-secondary/15 border border-secondary/15 inset-shadow-sm inset-shadow-white ">
+
+              <button data-plan="monthly"
+                class="tab-btn capitalize text-secondary font-semibold py-3 rounded-lg  px-6  hover:border-black cursor-pointer translat-all tab-btn">Monthly</button>
+              <button data-plan="yearly"
+                class="tab-btn  bg-primary border border-secondary/15 text-black text-secondary font-semibold py-3 rounded-lg  px-6  hover:border-black cursor-pointer transition-all tab-btn">Yearly</button>
+            </div>
+
+            <!-- save-->
+            <p class="text-green font-semibold  " id="save">Save 25%</p>
+          </div>
+
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-5 my-15 items-start">
+            <!-- card 1-->
+            <div
+              class="flex flex-col gap-5 bg-secondary/15 p-10 rounded-2xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+              <!-- head-->
+              <div>
+                <h4 class="font-bold  text-xl">Starter</h4>
+                <p class="text-secondary text-xl  ">For small teams getting started</p>
+              </div>
+
+              <!-- price-->
+              <div>
+                <p class="font-extrabold text-3xl">$<span class="text-7xl price " data-monthly="30"
+                    data-yearly="22">22</span></p>
+                <p class="text-secondary">per seat / month </p>
+                <p class="p-2 bg-primary rounded-lg font-bold text-center w-fit highlight" data-monthly="Biled monthly"
+                  data-yearly="$264 billed annually">$264 billed annually</p>
+              </div>
+
+              <!-- btn cta -->
+              <button
+                class="w-full capitalize font-semibold py-3 px-4 my-4 rounded-lg border border-secondary/20 hover:border-black hover:-translate-1 cursor-pointer transition-all buttonShadow">
+                Get Started
+              </button>
+
+              <ul class="flex flex-col  gap-4">
+                <li class="flex items-center gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">Up to 5 team members</span>
+
+                </li>
+
+                <li class="flex items-center  gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">1 billion events / month</span>
+
+                </li>
+
+                <il class="flex items-center gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">7-day data retention</span>
+
+                </il>
+
+                <li class="flex items-center  gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">Community support</span>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+            <!-- card 2-->
+            <div
+              class="relative flex flex-col gap-5 bg-secondary/15 p-10 rounded-2xl border border-secondary/15 inset-shadow-sm inset-shadow-primary ">
+              <!-- head-->
+              <div>
+                <h4 class="font-bold  text-xl">Pro</h4>
+                <p class="text-secondary text-xl  ">For scaling data teams</p>
+              </div>
+
+              <!-- price-->
+              <div>
+                <p class="font-extrabold text-3xl">$<span class="text-7xl  " data-monthly="100"
+                    data-yearly="75">75</span>
+                </p>
+                <p class="text-secondary">per seat / month </p>
+                <p class="p-2 bg-primary rounded-lg font-bold text-center w-fit" data-monthly="Biled monthly"
+                  data-yearly="$900 billed annually">$900 billed annually</p>
+              </div>
+
+              <!-- btn cta -->
+              <button
+                class="w-full capitalize font-semibold py-3 px-4 my-4 rounded-lg border border-secondary/20 hover:border-black hover:-translate-1 cursor-pointer transition-all bg-primary buttonShadow">
+                Get Started
+              </button>
+
+              <ul class="flex flex-col  gap-4">
+                <li class="flex items-center gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">Unlimited team members</span>
+
+                </li>
+
+                <li class="flex items-center  gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">50 billion events / month</span>
+
+                </li>
+
+                <il class="flex items-center gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">Unlimited data retention</span>
+
+                </il>
+
+                <li class="flex items-center  gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">Priority support + SLA</span>
+
+                </li>
+
+                <li class="flex items-center  gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">SSO & audit logs</span>
+
+                </li>
+
+              </ul>
+
+              <div class="absolute -top-4  left-1/2 -translate-x-1/2 bg-primary py-1 px-4 rounded-full font-bold ">
+                Most Popular
+              </div>
+
+            </div>
+
+            <!-- card 3-->
+            <div
+              class="flex flex-col gap-5 bg-secondary/15 p-10 rounded-2xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+              <!-- head-->
+              <div>
+                <h4 class="font-bold  text-xl">Enterprise</h4>
+                <p class="text-secondary text-xl  ">For mission-critical deployments</p>
+              </div>
+
+              <!-- price-->
+              <div>
+                <p class="font-extrabold text-3xl">$<span class="text-7xl" data-monthly="500"
+                    data-yearly="375">375</span>
+                </p>
+                <p class="text-secondary">per seat / month </p>
+                <p class="p-2 bg-primary rounded-lg font-bold text-center w-fit" data-monthly="Billed monthly"
+                  data-yearly="$4,500 billed annually">$4,500 billed annually</p>
+              </div>
+
+              <!-- btn cta -->
+              <button
+                class="w-full capitalize font-semibold py-3 px-4 my-4 rounded-lg border border-secondary/20 hover:border-black hover:-translate-1 cursor-pointer transition-all buttonShadow">
+                Get Started
+              </button>
+
+              <ul class="flex flex-col  gap-4">
+                <li class="flex items-center gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">Everything in Pro</span>
+
+                </li>
+
+                <li class="flex items-center  gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">Dedicated infrastructure</span>
+
+                </li>
+
+                <li class="flex items-center gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">Custom integrations</span>
+
+                </li>
+
+                <li class="flex items-center  gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+
+                  <span class="text-secondary font-bold">24/7 dedicated support</span>
+
+                </li>
+
+                <li class="flex items-center  gap-3 text-secondary">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                  </span>
+                  <span class="text-secondary font-bold"> 99.99% SLA guarantee </span>
+
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- FAQ-->
+        <section class="mb-50 flex flex-col items-center">
+          <div class="flex flex-col gap-5  ">
+            <p class="flex items-center justify-center gap-2">
+              <span class="block w-2 h-2 bg-green rounded-full animate-pulse">
+              </span>
+
+              <span class="uppercase text-[#999999] tracking-wider">FAQ</span>
+            </p>
+
+            <h2 class="text-5xl mb-4 font-extrabold mx-auto text-center w-full md:w-170">
+              Common questions, straight answers
+            </h2>
+
+            <div class="flex items-center justify-end gap-3">
+              <button
+                class="text-secondary px-3 font-bold bg-secondary/15 p-2 border border-secondary/15 hover:border-secondary cursor-pointer text-black rounded-lg border border-secondary/15 inset-shadow-sm inset-shadow-white  transition-all">Expand
+                All</button>
+              <button
+                class="text-secondary plg font-bold bg-secondary/15 p-2 border border-secondary15 hover:border-secondary cursor-pointer rounded-lg border border-secondary/15 inset-shadow-sm inset-shadow-white transition-all">Collapse
+                All</button>
+
+            </div>
+
+            <!-- cardes collaps-->
+            <div class="flex  items-center flex-col    gap-5 ">
+              <div
+                class=" flex items-center justify-between text-black text-xl font-semibold w-full py-5 px-7 rounded-2xl gap-5 bg-third  border border-secondary/15 hover:cursor-pointer    rounded-2xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+
+                How long does the free trial last?
+
+                <span class="flex justify-end bg-white rounded-lg w-8 p-1">
+                  <svg viewBox="0 0 14 14" fill="none">
+                    <path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"></path>
+                  </svg>
+
+                </span>
+              </div>
+
+              <!-- body-->
+              <p class="text-sm text-secondary">
+                Every plan includes a 14-day free trial with full access to all features. No credit card required to get
+                started. At the end of the trial, you can choose a plan or export your data.
+              </p>
+
+
+              <div
+                class=" flex items-center justify-between text-black text-xl font-semibold w-full py-5 px-7 rounded-2xl gap-5 bg-third  border border-secondary/15 hover:cursor-pointer  p-4  rounded-2xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+
+                Can I switch plans later?
+
+                <span class="flex justify-end bg-white rounded-lg w-8 p-1">
+                  <svg viewBox="0 0 14 14" fill="none">
+                    <path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"></path>
+                  </svg>
+
+                </span>
+              </div>
+
+              <!-- body-->
+              <p class="text-sm text-secondary">
+                Yes. Upgrade or downgrade any time from your account settings. When upgrading, you only pay the prorated
+                difference. When downgrading, the remaining balance is applied as credit toward future invoices.
+              </p>
+
+              <div
+                class=" flex items-center justify-between text-black text-xl font-semibold w-full py-5 px-7 rounded-2xl gap-5 bg-third  border border-secondary/15 hover:cursor-pointer  p-4  rounded-2xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+
+                What data sources do you support?
+
+                <span class="flex justify-end bg-white rounded-lg w-8 p-1">
+                  <svg viewBox="0 0 14 14" fill="none">
+                    <path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"></path>
+                  </svg>
+
+                </span>
+              </div>
+
+              <!-- body-->
+              <p class="text-sm text-secondary">
+                Catalyst connects to 50+ data sources out of the box, including PostgreSQL, MySQL, BigQuery, Snowflake,
+                Redshift, S3, Kafka, and most popular REST APIs. Custom connectors are available on the Enterprise plan.
+              </p>
+
+
+              <div
+                class=" flex items-center justify-between text-black text-xl font-semibold w-full py-5 px-7 rounded-2xl gap-5 bg-third  border border-secondary/15 hover:cursor-pointer  p-4  rounded-2xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+
+                Is my data secure?
+
+                <span class="flex justify-end bg-white rounded-lg w-8 p-1">
+                  <svg viewBox="0 0 14 14" fill="none">
+                    <path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"></path>
+                  </svg>
+
+                </span>
+              </div>
+
+              <!-- body-->
+              <p class="text-sm text-secondary">
+                Absolutely. All data is encrypted at rest (AES-256) and in transit (TLS 1.3). We are SOC 2 Type II
+                certified and GDPR compliant. Enterprise customers also get dedicated infrastructure with VPC peering
+                and custom encryption keys.
+              </p>
+
+
+              <div
+                class=" flex items-center justify-between text-black text-xl font-semibold w-full py-5 px-7 rounded-2xl gap-5 bg-third  border border-secondary/15 hover:cursor-pointer  p-4  rounded-2xl border border-secondary/15 inset-shadow-sm inset-shadow-white">
+
+                Do you offer onboarding support?
+
+                <span class="flex justify-end bg-white rounded-lg w-8 p-1">
+                  <svg viewBox="0 0 14 14" fill="none">
+                    <path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"></path>
+                  </svg>
+
+                </span>
+              </div>
+
+              <p class="text-sm text-secondary">
+                Pro customers get access to our onboarding team for the first 30 days. Enterprise customers receive a
+                dedicated solutions engineer for the full implementation. All plans include access to our docs,
+                tutorials, and community forum.
+              </p>
+
+            </div>
+          </div>
+        </section>
+
+
+
+      </div>
+
+      <!-- Get startec-->
+      <div
+        class="flex flex-col items-center justify-center bg-black py-10 px-12  mx-auto gap-2 rounded-4xl relative overflow-hidden">
+
+        <!--Background glow -->
+        <div>
+          <div class="absolute top-0 -right-30 bg-primary w-[105px] h-[105px] blur-[100px]">
+
+          </div>
+          <div class="absolute buttom-0 -left-30 bg-primary w-[105px] h-[105px] blur-[100px]">
+
+          </div>
+        </div>
+        <div class="w-full h-full bg-secondary/15 absolute inset-0=="></div>
+
+        <!-- info-->
+        <div class="w-fit mx-auto flex items-center justify-center py-2 px-4 w-75  gap-2">
+          <span class="block w-1.5 h-1.5 bg-green rounded-full animate-pulse"></span>
+          <span class="text-third/40 text-xl uppercase font-bold">Get started today</span>
+        </div>
+        <h3 class="text-5xl md:text-6xl font-extrabold text-white w-full md:w-150 text-center tracking-tight mx-auto">
+          Ready to accelerate your data?
+        </h3>
+        <p class="flex items-center justify-center text-center text-secondary w-100">
+          Join 2,000+ teams shipping faster with sub-second analytics. Free for 14 days.
+        </p>
+        <!-- btns-->
+        <div
+          class="z-100 flex items-center   justify-center gap-5 grid sm:grid-cols-1  md:grid-cols-2  flex-row-reverse">
+          <button
+            class="capitalize  text-secondary  font-semibold py-3 px-4 rounded-lg border border-secondary hover:border-black hover:-translate-y-1 cursor-pointer transition-all buttonShadow">
+            Talk to Sales
+          </button>
+          <button
+            class="order-first capitalize font-semibold py-3 px-4 sm-px-25 rounded-lg border border-secondary/20 bg-primary hover:border-black transition-all hover:-translate-1 cursor-pointer buttonShadow flex items-center gap-2">
+            start free trial
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                stroke="currentColor" class="size-6 w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer-->
+  <footer class="px-5 mt-30 border-t border-secondary/15">
+    <!-- top-->
+    <section class="my-15 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-10">
+      <!-- logo -->
+      <div class="lg:col-span-2 flex flex-col gap-5">
+        <!-- logo-->
+        <div class="flex items-center hover:cursor-pointer gap-3">
+          <div class="flex items-center justify-center rounded-xl bg-primary w-8 h-8">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5">
+              <path d="M3 8L7 4L13 8L7 12L3 8Z" fill="#111"></path>
+            </svg>
+          </div>
+
+          <span class="text-2xl font-bold">Catalyst</span>
+        </div>
+        <p class="text-secondary w-full lg:w-100">
+          The analytics platform built for speed. Sub-second queries,
+          real-time pipelines, and infinite scale.
+        </p>
+      </div>
+
+      <!-- Resources-->
+      <ul class="flex-col gap-5">
+        <h5 class="uppercase font-bold text-black traking-wider hover:text-black cursor-pointer transition-colors">
+          Resources
+        </h5>
+        <li>
+          <a href="#Documentation"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">Documentation</a>
+        </li>
+        <li>
+          <a href="#API Reference"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">API Reference</a>
+        </li>
+        <li>
+          <a href="#Blog" class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">Blog</a>
+        </li>
+        <li>
+          <a href="#Changelog"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">Changelog</a>
+        </li>
+        <li>
+          <a href="#Status Page"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">Status Page</a>
+        </li>
+      </ul>
+
+      <!-- Support -->
+      <ul class="flex-col gap-5">
+        <h5 class="uppercase font-bold text-black traking-wider hover:text-black cursor-pointer transition-colors">
+          Support
+        </h5>
+
+        <li>
+          <a href="#Help Center"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">Help Center</a>
+        </li>
+        <li>
+          <a href="#Community Forum"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">Community Forum</a>
+        </li>
+        <li>
+          <a href="#Contact Us"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">Contact Us</a>
+        </li>
+        <li>
+          <a href="#Changelog"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">Changelog</a>
+        </li>
+        <li>
+          <a href="#System Status"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">System Status</a>
+        </li>
+      </ul>
+
+      <!-- Connect -->
+      <ul class="flex-col gap-5">
+        <h5 class="uppercase font-bold text-black traking-wider hover:text-black cursor-pointer transition-colors">
+          Connect
+        </h5>
+        <li>
+          <a href="#Twitter / X"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">Twitter / X</a>
+        </li>
+        <li>
+          <a href="#GitHub"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">GitHub</a>
+        </li>
+        <li>
+          <a href="#LinkedIn"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">LinkedIn</a>
+        </li>
+        <li>
+          <a href="#YouTube"
+            class="capitalize text-secondary hover:text-black cursor-pointer transition-colors">YouTube</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- down-->
+    <section
+      class="flex items-center justify-center py-10 text-secondary border-t border-secondary/15 gap-5 grid md:grid-cols-2">
+      <p class="text-secondary justify-center">
+        © 2026 Catalyst Inc. All rights reserved. Design:
+        <a href="www.itLegend.com" class="hover:text-black transition-colors">It Legend</a>
+      </p>
+
+      <ul class="flex items-center md:justify-end items-center gap-5 justify-center">
+        <li>
+          <a href="#Privacy"
+            class="capitalize text-secondary/40 hover:text-black cursor-pointer transition-colors">Privacy</a>
+        </li>
+        <li>
+          <a href="#Terms"
+            class="capitalize text-secondary/40 hover:text-black cursor-pointer transition-colors">Terms</a>
+        </li>
+        <li>
+          <a href="#Cookies"
+            class="capitalize text-secondary/40 hover:text-black cursor-pointer transition-colors">Cookies</a>
+        </li>
+      </ul>
+    </section>
+
+  </footer>
+</body>
+<script src="/Catealyst_Project/app.js"></script>
+
+</html>

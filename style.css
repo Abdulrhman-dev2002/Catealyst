@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html{
+ scroll-behavior: smooth;
+}
+
+body{
+ font-family: "Inter",sans-serif;
+}
+
+.buttonShadow:hover{
+ box-shadow: 4px 4px 0 #111;
+}
+
+.container{
+ width: 1100px;
+}
+
+@media screen and (max-width:768px){
+ .container{
+ width: 100%;
+}
+}
